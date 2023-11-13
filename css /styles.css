@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+:root {
+  /* primary colors */
+  --clr-primary-1-red: hsl(0, 78%, 62%);
+  --clr-primary-2-cyan: hsl(180, 62%, 55%);
+  --clr-primary-3-orange: hsl(34, 97%, 64%);
+  --clr-primary-4-blue: hsl(212, 86%, 64%);
+
+  /* secondary colors */
+  --clr-secondary-1-veryDarkBlue: hsl(234, 12%, 34%);
+  --clr-secondary-2-GrayBlue: hsl(229, 6%, 66%);
+  --clr-secondary-3-veryLightGray: hsl(0, 0%, 98%);
+
+  /* fonts */
+  --bodyFont: "Poppins", sans-serif;
+
+  /* box shadow */
+  --shadow-1: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-2: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-3: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-4: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+/* body */
+body {
+  font-family: var(--bodyFont);
+  font-size: 0.938rem;
+}
+/* credits */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
