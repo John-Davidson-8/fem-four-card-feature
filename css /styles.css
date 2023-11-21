@@ -26,20 +26,98 @@
 body {
   font-family: var(--bodyFont);
   font-size: 0.938rem;
+  color: var(--clr-secondary-1-veryDarkBlue);
   background: var(--clr-secondary-3-veryLightGray);
   padding: 1rem 2rem;
+  font-family: var(--bodyFont);
+  line-height: 1.4;
   /* border-left: 4px solid #f9f9f9;
   border-right: 4px solid #f9f9f9; */
 }
 .container {
   min-height: 100vh;
-  max-width: 375px;
-  margin: auto;
+  max-width: 36rem;
+  margin: 4rem auto;
 }
 section {
   display: grid;
+  gap: 1.438rem;
 }
-
+header {
+  margin-bottom: 5.25rem;
+}
+header h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 200;
+  line-height: 1.4;
+}
+header h1 span {
+  font-weight: 600;
+}
+header p {
+  font-size: 0.938rem;
+  text-align: center;
+  font-weight: 300;
+  line-height: 1.563;
+}
+.card {
+  box-shadow: var(--shadow-4);
+  padding: 1.75rem;
+  border-radius: 0.5rem;
+}
+.card h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.card p {
+  font-size: 0.813rem;
+  font-weight: 300;
+}
+.card img {
+  margin-top: 2.063rem;
+  margin-bottom: 1.75rem;
+  margin-right: 1.75rem;
+  margin-left: auto;
+  max-width: 3.563rem;
+  max-height: 3.563rem;
+}
+.card-aqua {
+  border-top: 0.25rem solid hsl(180, 62%, 55%);
+}
+.card-red {
+  border-top: 0.25rem solid hsl(0, 78%, 62%);
+}
+.card-yellow {
+  border-top: 0.25rem solid hsl(34, 97%, 64%);
+}
+.card-blue {
+  border-top: 0.25rem solid hsl(212, 86%, 64%);
+}
+/* media queries */
+@media (min-width: 36rem) {
+  header {
+    max-width: 33.75rem;
+    margin: auto;
+    margin-bottom: 4rem;
+  }
+  header h1 {
+    font-size: 2.25rem;
+  }
+  .container {
+    max-width: 1200px;
+  }
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .card-yellow {
+    grid-column-start: 2;
+    grid-column-end: -2;
+  }
+  .card-aqua {
+  }
+}
 /* credits */
 .attribution {
   font-size: 11px;
