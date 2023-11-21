@@ -26,7 +26,20 @@
 body {
   font-family: var(--bodyFont);
   font-size: 0.938rem;
+  background: var(--clr-secondary-3-veryLightGray);
+  padding: 1rem 2rem;
+  /* border-left: 4px solid #f9f9f9;
+  border-right: 4px solid #f9f9f9; */
 }
+.container {
+  min-height: 100vh;
+  max-width: 375px;
+  margin: auto;
+}
+section {
+  display: grid;
+}
+
 /* credits */
 .attribution {
   font-size: 11px;
